@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Paint</title>
+    <link
+      rel="shortcut icon"
+      href="assets/logo-paint.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="flex align-center">
+      <div class="toolbar flex flex-column">
+        <div
+          class="cropping border flex align-center justify-start flex-column"
+        >
+          <div><h3>Recorte</h3></div>
+          <div class="items-container flex">
+            <div class="image-icon">
+              <img src="./assets/select-image.png" alt="select-image" />
+            </div>
+            <div class="text-container flex flex-column">
+              <div id="coded-regions" class="single-text">
+                <p>Regiões codificadas</p>
+              </div>
+              <div id="parametric-equation" class="single-text">
+                <p>Equação paramétrica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="transformations border">
+          <div>
+            <h3>Transformações</h3>
+          </div>
+          <div class="text-container-2 flex align-center">
+            <div id="reflection" class="single-text"><p>Reflexão</p></div>
+            <div id="translation" class="single-text"><p>Translação</p></div>
+            <div id="rotation" class="single-text"><p>Rotacao</p></div>
+            <div id="scale" class="single-text"><p>Escala</p></div>
+          </div>
+          <div class="input-transformations-coordinates">
+            <div>X:</div>
+            <input type="number" value="0" />
+            <div>Y:</div>
+            <input type="number" value="0" />
+          </div>
+          <div class="input-transformations-asis">
+            <div>
+              <label for="x-asis">X</label>
+              <input
+                type="checkbox"
+                id="x-asis"
+                name="asis-x"
+                value="x"
+                checked
+              />
+
+              <label for="y-asis">Y</label>
+              <input type="checkbox" id="y-asis" name="asis-y" value="y" />
+            </div>
+          </div>
+          <div class="input-transformations-angle">
+            <input type="number" value="0" /> <label for="angle">°</label>
+          </div>
+        </div>
+        <div class="shapes border">
+          <div>
+            <h3>Rasterização</h3>
+          </div>
+          <div class="shape-items-container flex align-center">
+            <div class="image-icon">
+              <img src="/assets/line.png" alt="line image" />
+            </div>
+            <div id="dda" class="single-text">
+              <p>DDA</p>
+            </div>
+            <div id="bresenham" class="single-text">
+              <p>Bresenham</p>
+            </div>
+          </div>
+          <div class="shape-items-container flex align-center">
+            <div class="image-icon">
+              <img src="/assets/circle.png" alt="circle image" />
+            </div>
+            <div id="circle" class="single-text"><p>Bresenham</p></div>
+          </div>
+        </div>
+      </div>
+      <canvas id="paintCanvas" width="800" height="500"></canvas>
+      <aside class="flex"></aside>
+    </main>
+    <!-- <script src="script.js"></script> -->
+    <script type="module" src="./js/canvas.js"></script>
+    <script type="module" src="./js/events.js"></script>
+    <script type="module" src="./js/shapes.js"></script>
+    <script type="module" src="./js/transformations.js"></script>
+    <script type="module" src="./js/cropping.js"></script>
+  </body>
+</html>

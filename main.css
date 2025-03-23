@@ -1,0 +1,19 @@
+.border {
+  border: 1px solid black;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.flex-column {
+  flex-direction: column;
+}

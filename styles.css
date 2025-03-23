@@ -1,0 +1,114 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+main {
+  height: 100vh;
+  gap: 20px;
+  margin: 10px;
+}
+
+canvas {
+  border: 1px solid black;
+  cursor: crosshair;
+}
+
+aside {
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: inherit;
+}
+
+.toolbar {
+  margin: 20px;
+}
+
+.cropping {
+  width: 300px;
+}
+
+.items-container {
+  margin-bottom: 10px;
+}
+
+.image-icon img {
+  height: 60px;
+  width: 60px;
+}
+
+.text-container {
+  align-items: flex-start;
+  gap: 5px;
+  margin-left: 20px;
+  height: 60px;
+}
+
+.text-container p {
+  margin: 0px;
+  padding: 5px;
+}
+
+.text-container p :hover {
+  border: 1px solid blue;
+  background-color: rgba(0, 0, 255, 0.041);
+  cursor: pointer;
+}
+
+.text-clicked {
+  background-color: rgba(0, 0, 255, 0.041);
+}
+
+.input-transformations-coordinates,
+.input-transformations-asis,
+.input-transformations-angle {
+  display: none;
+}
+
+.input-transformations-coordinates_clicked,
+.input-transformations-asis_clicked,
+.input-transformations-angle_clicked {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  gap: 5px;
+}
+
+.input-transformations-coordinates_clicked input,
+.input-transformations-angle_clicked input {
+  border: 1px solid #0000003f;
+  background-color: #f4f4f4;
+  width: 50px;
+}
+
+.text-container-2 {
+  justify-content: space-around;
+  width: 100%;
+}
+
+.shape-items-container {
+  gap: 30px;
+}
+
+.single-text {
+  cursor: pointer;
+}
+
+.single-text :hover {
+  border: 1px solid blue;
+  background-color: rgba(0, 0, 255, 0.041);
+  padding: 5px;
+}
+
+.single-text-clicked {
+  border: 1px solid blue;
+  background-color: rgba(0, 0, 255, 0.041);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.single-text-clicked p {
+  margin: 0px;
+}
